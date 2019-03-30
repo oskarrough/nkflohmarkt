@@ -1,3 +1,44 @@
 html {
 	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; 
 }
+
+.Grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 5%;
+}
+
+/******** grid ***********/
+
+.Grid * {
+	border:2px solid black;
+}
+
+/******** items ***********/
+
+.Grid-socialList,
+.Grid-booking,
+.Grid-video {
+	grid-column-start:1;
+	grid-column-end:4;
+}
+
+.Grid-logoWrapper {
+	grid-column-start:1;
+	grid-column-end:2;
+}
+
+.Grid-description {
+	grid-column-start:2;
+	grid-column-end:4;	
+}
+
+.Grid-socialList-icon * {
+	width:1.5rem;
+	height: 1.5rem;
+}
+
+.Grid-logoWrapper * {
+	width:5rem;
+	height:5rem;
+}
