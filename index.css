@@ -6,19 +6,27 @@ body {
 	margin:0;
 }
 
+/* all black links */
+a {
+	color:black;
+}
+
+
 .Grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: repeat(15, calc(100vh / 15));
 	grid-gap: 2.5%;
 	min-height: 100vh;
-	margin:1rem;
+	padding:0.6rem;
 }
 
 /******** grid ***********/
 
 .Grid > * {
-	border:2px solid black;
+	border:0.1rem solid black;
+	box-shadow: 0.3em 0.3rem 0px #FFF501;
+	border-radius: 0.1rem;
 }
 
 /******** items ***********/
@@ -68,25 +76,14 @@ body {
 }
 
 
-.Grid-logoWrapper,
-.Grid-description,
-.Grid-booking,
-.Grid-calendar,
-.Grid-infoLink,
-.Grid-video,
-.Grid-map{
+/* center texts in boxes */
+.FlexCont{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 }
 
-.PageTitle,
-.Grid-description-text,
-.Grid-booking-text,
-.Grid-calendar-text,
-.Grid-infoLink-text,
-.Grid-video-text,
-.Grid-map-img {
+.FlexItem {
 	text-align: center;
 }
 
@@ -147,6 +144,11 @@ body {
 
 .VideoText {
 	font-size: 1.3rem;
+}
+
+.InfoText {
+	font-size: 1.3rem;
+	
 }
 
 .BookingText,
