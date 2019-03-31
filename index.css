@@ -31,7 +31,6 @@ body {
 }
 
 .Grid-socialList {
-	Iborder:none;
 	grid-row-start: 1;
 	grid-row-end:1;
 }
@@ -125,4 +124,50 @@ body {
 .Grid-video {
 	grid-row-start:10;
 	grid-row-end:12;	
+}
+
+
+/******* texts ******/
+
+.BookingText {
+	font-size:1.8rem;
+}
+
+.DescripionText {
+	font-size:0.9rem;
+	max-width: 95%;
+	max-height: 95%;
+	margin: 0 auto;
+}
+
+.CalendarText {
+	font-size: 1rem;
+	margin: 0 0.5em;
+}
+
+.VideoText {
+	font-size: 1.3rem;
+}
+
+.BookingText,
+.DescripionText,
+.CalendarText,
+.VideoText {
+	transition: font-size 0.3s ease-in-out;
+}
+
+@media (min-width:768px) {
+
+	.BookingText {
+		font-size:2.4rem;
+	}
+	.DescripionText{ 
+		font-size:1.2rem;
+	}
+	.CalendarText {
+		font-size: 1.3rem;
+	}
+	.VideoText {
+		font-size: 1.7rem;
+	}
 }
