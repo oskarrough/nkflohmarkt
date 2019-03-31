@@ -17,8 +17,8 @@ a {
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: repeat(15, calc(100vh / 15));
 	grid-gap: 2.5%;
-	min-height: 100vh;
-	padding:0.6rem;
+	height: 95vh;
+	padding: 0.6rem;
 }
 
 /******** grid ***********/
