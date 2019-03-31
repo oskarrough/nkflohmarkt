@@ -36,6 +36,11 @@ body {
 	grid-row-end:1;
 }
 
+.Grid-socialList-icon > * {
+	width:1.5rem;
+	height: 1.5rem;
+}
+
 .socialWrapper {
 	float: right;
 	margin-right: 0.5rem;
@@ -58,7 +63,8 @@ body {
 .Grid-booking,
 .Grid-calendar,
 .Grid-infoLink,
-.Grid-video{
+.Grid-video,
+.Grid-map{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -68,7 +74,8 @@ body {
 .Grid-booking-text,
 .Grid-calendar-text,
 .Grid-infoLink-text,
-.Grid-video-text {
+.Grid-video-text,
+.Grid-map-img {
 	text-align: center;
 }
 
@@ -91,9 +98,16 @@ body {
 	grid-row-end:10;
 }
 
-.Grid-socialList-icon > * {
-	width:1.5rem;
-	height: 1.5rem;
+
+.Grid-map-img {
+	max-width: 90%;
+	max-height: 90%;
+	display: block;
+	margin: 0 auto;
+}
+
+.Grid-map-img:hover{
+	cursor: pointer;
 }
 
 .Grid-video {
