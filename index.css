@@ -59,6 +59,17 @@ body {
 	height:9rem;
 }
 
+.PageTitle {
+	margin:0 auto;
+}
+
+.Logo {
+	width: 100%;
+	height: 100%;
+}
+
+
+.Grid-logoWrapper,
 .Grid-description,
 .Grid-booking,
 .Grid-calendar,
@@ -70,6 +81,7 @@ body {
 	justify-content: center;
 }
 
+.PageTitle,
 .Grid-description-text,
 .Grid-booking-text,
 .Grid-calendar-text,
