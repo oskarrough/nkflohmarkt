@@ -1,3 +1,175 @@
 html {
 	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; 
 }
+
+body {
+	margin:0;
+}
+
+/* all black links */
+a {
+	color:black;
+}
+
+
+.Grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: repeat(15, calc(100vh / 15));
+	grid-gap: 2.5%;
+	min-height: 100vh;
+	padding:0.6rem;
+}
+
+/******** grid ***********/
+
+.Grid > * {
+	border:0.1rem solid black;
+	box-shadow: 0.3em 0.3rem 0px #FFF501;
+	border-radius: 0.1rem;
+}
+
+/******** items ***********/
+
+.Grid-socialList,
+.Grid-booking,
+.Grid-video {
+	grid-column-start:1;
+	grid-column-end:4;
+}
+
+.Grid-socialList {
+	grid-row-start: 1;
+	grid-row-end:1;
+}
+
+.Grid-socialList-icon > * {
+	width:1.5rem;
+	height: 1.5rem;
+}
+
+.socialWrapper {
+	float: right;
+	margin-right: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.Grid-logoWrapper {
+	grid-column-start:1;
+	grid-column-end:2;
+	grid-row-start: 2;
+	grid-row-end:5;
+}
+
+.Grid-logoWrapper > * {
+	width:9rem;
+	height:9rem;
+}
+
+.PageTitle {
+	margin:0 auto;
+}
+
+.Logo {
+	width: 100%;
+	height: 100%;
+}
+
+
+/* center texts in boxes */
+.FlexCont{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.FlexItem {
+	text-align: center;
+}
+
+.Grid-description {
+	grid-column-start:2;
+	grid-column-end:4;
+	grid-row-start: 2;
+	grid-row-end:5;
+}
+
+.Grid-booking {
+	grid-row-start: 5;
+	grid-row-end:7;
+}
+
+.Grid-calendar,
+.Grid-map,
+.Grid-infoLink {
+	grid-row-start: 7;
+	grid-row-end:10;
+}
+
+
+.Grid-map-img {
+	max-width: 90%;
+	max-height: 90%;
+	display: block;
+	margin: 0 auto;
+}
+
+.Grid-map-img:hover{
+	cursor: pointer;
+}
+
+.Grid-video {
+	grid-row-start:10;
+	grid-row-end:12;	
+}
+
+
+/******* texts ******/
+
+.BookingText {
+	font-size:1.8rem;
+}
+
+.DescripionText {
+	font-size:0.9rem;
+	max-width: 95%;
+	max-height: 95%;
+	margin: 0 auto;
+}
+
+.CalendarText {
+	font-size: 1rem;
+	margin: 0 0.5em;
+}
+
+.VideoText {
+	font-size: 1.3rem;
+}
+
+.InfoText {
+	font-size: 1.3rem;
+	
+}
+
+.BookingText,
+.DescripionText,
+.CalendarText,
+.VideoText {
+	transition: font-size 0.3s ease-in-out;
+}
+
+@media (min-width:768px) {
+
+	.BookingText {
+		font-size:2.4rem;
+	}
+	.DescripionText{ 
+		font-size:1.2rem;
+	}
+	.CalendarText {
+		font-size: 1.3rem;
+	}
+	.VideoText {
+		font-size: 1.7rem;
+	}
+}
