@@ -6,6 +6,10 @@ body {
 	margin:0;
 }
 
+* {
+	box-sizing: border-box;
+}
+
 /* all black links */
 a {
 	color:black;
@@ -23,10 +27,22 @@ a {
 
 /******** grid ***********/
 
+/* #FFF501 
+ verde: #72F387 */
+
 .Grid > * {
-	border:0.1rem solid black;
-	box-shadow: 0.3em 0.3rem 0px #FFF501;
-	border-radius: 0.1rem;
+	border:none;
+	//box-shadow: 0.1rem 0.1rem 0.2rem 0.1rem#32FF78;
+	box-shadow: 0 0 0.1rem 0.1rem #32FF78;
+	border-radius: 0.3rem;
+	background-color: white;
+	transition: all 0.4s ease-in-out;
+}
+
+.Grid > *:hover {
+	box-shadow: 0.1rem 0.1rem 0.2rem 0.1rem#FFF501;
+	border-radius: 0;
+	cursor: pointer;
 }
 
 /******** items ***********/
@@ -40,18 +56,17 @@ a {
 
 .Grid-socialList {
 	grid-row-start: 1;
-	grid-row-end:1;
+	grid-row-end:2;
 }
 
 .Grid-socialList-icon > * {
-	width:1.5rem;
-	height: 1.5rem;
+	width:2.2rem;
+	height: 2.2rem;
 }
 
 .socialWrapper {
 	float: right;
-	margin-right: 0.5rem;
-    margin-top: 0.5rem;
+	margin: 0.35rem 1rem;
 }
 
 .Grid-logoWrapper {
@@ -114,10 +129,6 @@ a {
 	margin: 0 auto;
 }
 
-.Grid-map-img:hover{
-	cursor: pointer;
-}
-
 .Grid-video {
 	grid-row-start:10;
 	grid-row-end:12;	
@@ -126,15 +137,17 @@ a {
 
 /******* texts ******/
 
-.BookingText {
-	font-size:1.8rem;
-}
-
 .DescripionText {
-	font-size:0.9rem;
+	/*font-size:0.9rem;*/
+	font-size:1rem;
 	max-width: 95%;
 	max-height: 95%;
 	margin: 0 auto;
+}
+
+.BookingText {
+	font-size:1.8rem;
+	font-weight: bold;
 }
 
 .CalendarText {
