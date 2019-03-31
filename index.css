@@ -36,6 +36,12 @@ body {
 	grid-row-end:1;
 }
 
+.socialWrapper {
+	float: right;
+	margin-right: 0.5rem;
+    margin-top: 0.5rem;
+}
+
 .Grid-logoWrapper {
 	grid-column-start:1;
 	grid-column-end:2;
