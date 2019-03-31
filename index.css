@@ -45,7 +45,6 @@ body {
 .Grid-logoWrapper {
 	grid-column-start:1;
 	grid-column-end:2;
-
 	grid-row-start: 2;
 	grid-row-end:5;
 }
@@ -55,10 +54,27 @@ body {
 	height:9rem;
 }
 
+.Grid-description,
+.Grid-booking,
+.Grid-calendar,
+.Grid-infoLink,
+.Grid-video{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.Grid-description-text,
+.Grid-booking-text,
+.Grid-calendar-text,
+.Grid-infoLink-text,
+.Grid-video-text {
+	text-align: center;
+}
+
 .Grid-description {
 	grid-column-start:2;
 	grid-column-end:4;
-	
 	grid-row-start: 2;
 	grid-row-end:5;
 }
