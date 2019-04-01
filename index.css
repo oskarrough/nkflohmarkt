@@ -62,13 +62,17 @@ a {
     margin-top: 0.5rem;
 }
 
+.Contact {
+	font-size:0.5rem;
+}
+
 .PageTitle {
 	margin:0 auto;
 }
 
 .Logo {
 	max-width: 90%;
-	margin-bottom: 0.5em;
+	margin-bottom: 0.6em;
 }
 
 
@@ -102,15 +106,15 @@ a {
 
 big,
 .Title {
-	font-size: 1.8rem;
+	font-size: 1.3rem;
 	letter-spacing: 0.05em;
 }
 
-.DescripionText {
+.DescriptionText {
 	max-width: 95%;
 	max-height: 95%;
 	margin: 0 auto;
-	font-size:0.90rem;
+	font-size:0.70rem;
 }
 
 .CalendarText {
@@ -118,10 +122,16 @@ big,
 }
 
 .BookingText,
-.DescripionText,
+.DescriptionText,
 .CalendarText,
 .VideoText {
 	transition: font-size 0.3s ease-in-out;
+}
+
+@media (min-width:574px) {
+	.Logo {
+		max-width: 70%;
+	}
 }
 
 @media (min-width:768px) {
@@ -130,7 +140,7 @@ big,
 	}
 
 	.Logo {
-		max-width: 70%;
+		max-width: 55%;
 	}
 }
 
