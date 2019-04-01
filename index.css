@@ -22,7 +22,7 @@ a {
 .Grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: repeat(15, calc(100vh / 15));
+	grid-template-rows: 2rem repeat(5, calc(100vh / 5));
 	grid-gap: 2.5%;
 	height: 95vh;
 	/* different padding-x to compensate for box-shadow */
@@ -51,11 +51,6 @@ a {
 	grid-column-end:4;
 }
 
-.Grid-socialList {
-	grid-row-start: 1;
-	grid-row-end:1;
-}
-
 .Grid-socialList-icon > * {
 	width:1.5rem;
 	height: 1.5rem;
@@ -67,24 +62,13 @@ a {
     margin-top: 0.5rem;
 }
 
-.Grid-logoWrapper {
-	grid-column-start:1;
-	grid-column-end:2;
-	grid-row-start: 3;
-	grid-row-end:4;
-}
-
-.Grid-logoWrapper > * {
-	/* width:9rem; */
-	/* height:9rem; */
-}
-
 .PageTitle {
 	margin:0 auto;
 }
 
 .Logo {
 	max-width: 90%;
+	margin-bottom: 0.5em;
 }
 
 
@@ -100,24 +84,8 @@ a {
 }
 
 .Grid-description {
-	grid-column-start:2;
-	grid-column-end:4;
-	grid-row-start: 2;
-	grid-row-end:5;
+	grid-column: 2/4;
 }
-
-.Grid-booking {
-	grid-row-start: 5;
-	grid-row-end:7;
-}
-
-.Grid-calendar,
-.Grid-map,
-.Grid-infoLink {
-	grid-row-start: 7;
-	grid-row-end:10;
-}
-
 
 .Grid-map-img {
 	max-width: 90%;
@@ -130,12 +98,6 @@ a {
 	cursor: pointer;
 }
 
-.Grid-video {
-	grid-row-start:10;
-	grid-row-end:12;	
-}
-
-
 /******* texts ******/
 
 big,
@@ -144,29 +106,15 @@ big,
 	letter-spacing: 0.05em;
 }
 
-.BookingText {
-	/* font-size:1.8rem; */
-}
-
 .DescripionText {
-	/* font-size:0.9rem; */
 	max-width: 95%;
 	max-height: 95%;
 	margin: 0 auto;
+	font-size:0.90rem;
 }
 
 .CalendarText {
-	/* font-size: 1rem; */
 	margin: 0 0.5em;
-}
-
-.VideoText {
-	/* font-size: 1.3rem; */
-}
-
-.InfoText {
-	/* font-size: 1.3rem; */
-	
 }
 
 .BookingText,
@@ -184,19 +132,6 @@ big,
 	.Logo {
 		max-width: 70%;
 	}
-
-	/* .BookingText { */
-	/* 	font-size:2.4rem; */
-	/* } */
-	/* .DescripionText{ */ 
-	/* 	font-size:1.2rem; */
-	/* } */
-	/* .CalendarText { */
-	/* 	font-size: 1.3rem; */
-	/* } */
-	/* .VideoText { */
-	/* 	font-size: 1.7rem; */
-	/* } */
 }
 
 @media (min-width: 1280px) {
