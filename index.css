@@ -51,6 +51,10 @@ a {
 	grid-column-end:4;
 }
 
+.Grid-socialList-icon {
+	text-decoration: none;
+}
+
 .Grid-socialList-icon > * {
 	width:1.5rem;
 	height: 1.5rem;
@@ -63,7 +67,7 @@ a {
 }
 
 .Contact {
-	font-size:0.5rem;
+	font-size: 0.7rem;
 }
 
 .PageTitle {
