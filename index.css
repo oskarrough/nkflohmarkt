@@ -169,7 +169,7 @@ big,
 }
 
 .InfoWrapper {
-	margin-top:3rem;
+	margin-top:10%;
 }
 
 .InfoWrapper-title {
@@ -187,5 +187,5 @@ big,
 
 .InfoWrapper-textWrapper-text {
 	font-size: 0.8rem;
-	margin:1.5rem;
+	margin:1rem;
 }
