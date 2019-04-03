@@ -1,3 +1,7 @@
-Website for NK Flohmarkt am Kranoldplatz
+# Website for NK Flohmarkt am Kranoldplatz
 
-https://deploy-preview-6--nkflohmarkt.netlify.com/
+&rarr; https://www.nkflohmarkt.de/
+
+---
+
+Development preview at https://nkflohmarkt.netlify.com/
