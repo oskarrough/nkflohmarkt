@@ -1,9 +1,12 @@
+// listeners on the two booking boxes routing to corresponding checkout pages
+
 const stripe = Stripe('pk_test_mZkntVL2ik2gfHlTjm3JbHuK006E6ncmTT', {
 	betas: ['checkout_beta_4']
 });
 
 const bookingBoxes = document.querySelectorAll('.BookingContainer-box');
 bookingBoxes.forEach(box => {
+
 	box.addEventListener('click', function (event) {
     	// When the customer clicks on the button, redirect
     	// them to Checkout.
