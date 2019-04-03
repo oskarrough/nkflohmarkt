@@ -32,7 +32,8 @@ a {
 /******** grid ***********/
 
 .Grid > *,
-.InfoWrapper-textWrapper {
+.InfoWrapper-textWrapper,
+.BookingContainer-box {
 	border: 0.15rem solid black;
 	box-shadow: 0.3em 0.3rem 0px var(--primary);
 	border-radius: 0.1rem;
@@ -69,6 +70,8 @@ a {
 
 .Contact {
 	font-size: 0.7rem;
+	margin-top:0.8rem;
+	margin-right:0.5rem;
 }
 
 .PageTitle {
@@ -126,13 +129,28 @@ big,
 	margin: 0 0.5em;
 }
 
-.BookingText,
 .DescriptionText,
 .CalendarText,
 .VideoText {
 	transition: font-size 0.3s ease-in-out;
 }
 
+.BookingContainer {
+	display:flex;
+	justify-content:space-between;
+}
+
+.BookingContainer-box {
+	width:47%;
+}
+
+.BookingContainer-box:hover {
+	cursor:pointer;
+}
+
+.BookingContainer-box-text {
+	padding:1rem;
+}
 @media (min-width:574px) {
 	.Logo {
 		max-width: 70%;
