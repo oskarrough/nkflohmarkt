@@ -200,7 +200,9 @@ big,
 /****** booking page *********/
 
 .TitleBooking {
-	text-align:left;
+	text-align:center;
+	font-size:1.7rem;
+	margin:0;
 }
 
 .BookingContainer {
@@ -211,6 +213,7 @@ big,
 }
 .BookingContainer-box {
 	width:90%;
+	margin:0.4rem;
 }
 .BookingContainer-box:hover {
 	cursor:pointer;
@@ -218,4 +221,5 @@ big,
 .BookingContainer-box-text {
 	padding-left:1rem;
 	padding-right:1rem;
+	font-size:0.9rem;
 }
