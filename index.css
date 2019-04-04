@@ -135,22 +135,6 @@ big,
 	transition: font-size 0.3s ease-in-out;
 }
 
-.BookingContainer {
-	display:flex;
-	justify-content:space-between;
-}
-
-.BookingContainer-box {
-	width:47%;
-}
-
-.BookingContainer-box:hover {
-	cursor:pointer;
-}
-
-.BookingContainer-box-text {
-	padding:1rem;
-}
 @media (min-width:574px) {
 	.Logo {
 		max-width: 70%;
@@ -184,6 +168,10 @@ big,
 	display:flex;
 	justify-content:flex-end;
 	float:none;
+}
+
+.Grid-socialList-icon {
+	margin:0.2rem;
 }
 
 .InfoWrapper {
