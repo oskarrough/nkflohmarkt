@@ -48,7 +48,7 @@ a {
 
 .Grid-socialList,
 .Grid-booking,
-.Grid-video {
+.Grid-performance {
 	grid-column-start:1;
 	grid-column-end:4;
 }
