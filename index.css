@@ -196,3 +196,26 @@ big,
 	margin:1rem;
 }
 
+
+/****** booking page *********/
+
+.TitleBooking {
+	text-align:left;
+}
+
+.BookingContainer {
+	display:flex;
+	flex-direction: column;
+	justify-content:space-around;
+	align-items:center;
+}
+.BookingContainer-box {
+	width:90%;
+}
+.BookingContainer-box:hover {
+	cursor:pointer;
+}
+.BookingContainer-box-text {
+	padding-left:1rem;
+	padding-right:1rem;
+}
