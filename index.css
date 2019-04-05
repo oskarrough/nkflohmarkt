@@ -18,6 +18,7 @@ a {
 	color:black;
 }
 
+/******** grid ***********/
 
 .Grid {
 	display: grid;
@@ -29,7 +30,37 @@ a {
 	padding: 0 1.8vw 0 1.5vw;
 }
 
-/******** grid ***********/
+/********* social media logos ******/
+
+
+.socialWrapper {
+	display:flex;
+	justify-content:flex-end;
+	float:none;
+}
+
+.socialWrapper > a {
+	/* social links */
+	float: right;
+	margin-right: 0.5rem;
+	margin-top: 0.5rem;
+}
+
+.socialWrapper > span {
+	/* email address */
+	font-weight: 400;
+	font-size: 0.7rem;
+	margin-top:0.8rem;
+	margin-right: 0.5rem;
+}
+
+.socialWrapper > a > img {
+	/* social logos */
+	width: 1rem;
+	height: 1rem;
+}
+
+/******** grid's boxes ***********/
 
 .Grid > *,
 .InfoWrapper-textWrapper,
@@ -37,45 +68,32 @@ a {
 	border: 0.15rem solid black;
 	box-shadow: 0.3em 0.3rem 0px var(--primary);
 	border-radius: 0.1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
-.Grid-noBorder {
+.Grid-bigBox {
+	grid-column: 1/4;
+}
+
+.Grid-mediumBox {
+	grid-column: 2/4;
+}
+
+.Grid > * > * {
+	/* center texts in boxes */
+	text-align: center;
+}
+
+.Grid-noBorderBox {
 	box-shadow: none;
 	border: 0;
 }
 
-/******** items ***********/
+/******** Logo ***********/
 
-.Grid-socialList,
-.Grid-booking,
-.Grid-performance {
-	grid-column-start:1;
-	grid-column-end:4;
-}
-
-.Grid-socialList-icon {
-	text-decoration: none;
-}
-
-.Grid-socialList-icon > * {
-	width: 1rem;
-	height: 1rem;
-}
-
-.socialWrapper {
-	float: right;
-	margin-right: 0.5rem;
-    margin-top: 0.5rem;
-}
-
-.Contact {
-	font-weight: 400;
-	font-size: 0.7rem;
-	margin-top:0.3rem;
-	margin-right: 0.5rem;
-}
-
-.PageTitle {
+.Grid-logoWrapper > h1 {
 	margin:0 auto;
 }
 
@@ -85,22 +103,7 @@ a {
 }
 
 
-/* center texts in boxes */
-.FlexCont{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
-
-.FlexItem {
-	text-align: center;
-}
-
-.Grid-description {
-	grid-column: 2/4;
-}
-
-.Grid-map-img {
+.Map {
 	display: block;
 	max-width: 100%;
 	max-height: 100%;
@@ -159,16 +162,6 @@ big,
 .BackArrow {
 	float:left;
 	margin-left:0.5rem;
-}
-
-.socialWrapper {
-	display:flex;
-	justify-content:flex-end;
-	float:none;
-}
-
-.Grid-socialList-icon {
-	margin:0.2rem;
 }
 
 .InfoWrapper {
