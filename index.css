@@ -166,6 +166,7 @@ big,
 
 .InfoWrapper {
 	margin-top:10%;
+	margin-bottom:3%;
 }
 
 .InfoWrapper-title {
@@ -174,9 +175,7 @@ big,
 }
 
 .InfoWrapper-textWrapper {
-	max-width:80vw;
-	margin-left:auto;
-	margin-right:auto;
+	margin: auto 1.4rem;
 	clear:both;
 	text-align: center;
 }
@@ -196,20 +195,20 @@ big,
 }
 
 .BookingContainer {
-	display:flex;
-	flex-direction: column;
-	justify-content:space-around;
-	align-items:center;
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	margin: auto 0.8rem;
+
 }
 .BookingContainer-box {
-	width:90%;
-	margin:0.4rem;
+	
+	text-align: center;
+	margin:0.5rem;
 }
 .BookingContainer-box:hover {
 	cursor:pointer;
 }
 .BookingContainer-box-text {
-	padding-left:1rem;
-	padding-right:1rem;
 	font-size:0.9rem;
+	padding: 0.6rem;
 }
