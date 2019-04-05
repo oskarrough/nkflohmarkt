@@ -1,9 +1,10 @@
 # Website for NK Flohmarkt am Kranoldplatz
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5fa71fa5-8976-47fa-8e35-b0968847b761/deploy-status)](https://app.netlify.com/sites/nkflohmarkt/deploys)
+
 &rarr; https://www.nkflohmarkt.de/
 
 ---
-
 Development preview at https://nkflohmarkt.netlify.com/
 
 1. https://github.com/ (or https://github.com/oskarrough/nkflohmarkt)
