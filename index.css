@@ -179,13 +179,12 @@ big,
 	display:grid;
 	grid-template-columns: 1fr 1fr;
 }
+
 .Box {
 	text-align: center;
 	margin:0.5rem;
 }
-.Box:hover {
-	cursor:pointer;
-}
+
 .Box-text {
 	font-size: 0.9rem;
 	padding: 0 0.6rem;
