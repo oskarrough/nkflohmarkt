@@ -159,28 +159,18 @@ big,
 
 .BackArrow {
 	float:left;
-	margin-left:0.5rem;
+}
+
+.BackArrow a {
+	display: inline-block;
+	padding-top: 0.2rem;
+	padding-left:0.5rem;
+	text-decoration: none;
+	font-size: 0.7rem;
 }
 
 .InfoWrapper {
-	margin-top:10%;
-	margin-bottom:3%;
-}
-
-.InfoWrapper-title {
-	margin:0;
-	text-align:center;
-}
-
-.InfoWrapper-textWrapper {
-	margin: auto 1.4rem;
-	clear:both;
-	text-align: center;
-}
-
-.InfoWrapper-textWrapper-text {
-	font-size: 0.8rem;
-	margin:1rem;
+	margin-top: 5vh;
 }
 
 /****** booking page *********/
@@ -197,6 +187,18 @@ big,
 	cursor:pointer;
 }
 .Box-text {
-	font-size:0.9rem;
-	padding: 0.6rem;
+	font-size: 0.9rem;
+	padding: 0 0.6rem;
+}
+
+.Box--longText {
+	text-align: initial;
+	max-width: 30em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.Box--longText p {
+	font-size: 0.7rem;
+	font-weight: 400;
 }
