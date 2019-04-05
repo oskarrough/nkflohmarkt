@@ -30,13 +30,11 @@ a {
 	padding: 0 1.8vw 0 1.5vw;
 }
 
-/********* social media logos ******/
-
+/********* contact social media logos ******/
 
 .SocialWrapper {
 	display:flex;
 	justify-content:flex-end;
-	float:none;
 }
 
 .SocialWrapper > a {
@@ -46,9 +44,7 @@ a {
 }
 
 .SocialWrapper > span {
-	/* email address */
-	font-weight: 400;
-	font-size: 0.7rem;
+	
 	margin-top:0.8rem;
 	margin-right: 0.5rem;
 }
@@ -58,6 +54,12 @@ a {
 	width: 1rem;
 	height: 1rem;
 }
+
+.Contact {
+	/* email address */
+	font-size:0.7rem;
+}
+
 
 /******** grid's boxes ***********/
 
