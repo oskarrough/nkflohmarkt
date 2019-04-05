@@ -33,20 +33,19 @@ a {
 /********* social media logos ******/
 
 
-.socialWrapper {
+.SocialWrapper {
 	display:flex;
 	justify-content:flex-end;
 	float:none;
 }
 
-.socialWrapper > a {
+.SocialWrapper > a {
 	/* social links */
-	float: right;
 	margin-right: 0.5rem;
 	margin-top: 0.5rem;
 }
 
-.socialWrapper > span {
+.SocialWrapper > span {
 	/* email address */
 	font-weight: 400;
 	font-size: 0.7rem;
@@ -54,7 +53,7 @@ a {
 	margin-right: 0.5rem;
 }
 
-.socialWrapper > a > img {
+.SocialWrapper > a > img {
 	/* social logos */
 	width: 1rem;
 	height: 1rem;
@@ -63,14 +62,14 @@ a {
 /******** grid's boxes ***********/
 
 .Grid > *,
-.InfoWrapper-textWrapper,
-.BookingContainer-box {
+.Box {
 	border: 0.15rem solid black;
 	box-shadow: 0.3em 0.3rem 0px var(--primary);
 	border-radius: 0.1rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	text-align:center;
 }
 
 .Grid-bigBox {
@@ -81,11 +80,6 @@ a {
 	grid-column: 2/4;
 }
 
-.Grid > * > * {
-	/* center texts in boxes */
-	text-align: center;
-}
-
 .Grid-noBorderBox {
 	box-shadow: none;
 	border: 0;
@@ -93,15 +87,10 @@ a {
 
 /******** Logo ***********/
 
-.Grid-logoWrapper > h1 {
-	margin:0 auto;
-}
-
 .Logo {
 	max-width: 90%;
 	margin-bottom: 0.6em;
 }
-
 
 .Map {
 	display: block;
@@ -197,18 +186,15 @@ big,
 .BookingContainer {
 	display:grid;
 	grid-template-columns: 1fr 1fr;
-	margin: auto 0.8rem;
-
 }
-.BookingContainer-box {
-	
+.Box {
 	text-align: center;
 	margin:0.5rem;
 }
-.BookingContainer-box:hover {
+.Box:hover {
 	cursor:pointer;
 }
-.BookingContainer-box-text {
+.Box-text {
 	font-size:0.9rem;
 	padding: 0.6rem;
 }
