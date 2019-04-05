@@ -104,8 +104,14 @@ a {
 
 /******* texts ******/
 
-big,
 .Title {
+	font-size:1.7rem;
+	margin:0;
+	text-align:center;
+}
+
+big,
+.Subtitle {
 	font-size: 1.3rem;
 	letter-spacing: 0.05em;
 }
@@ -114,7 +120,7 @@ big,
 	max-width: 95%;
 	max-height: 95%;
 	margin: 0 auto;
-	font-size:0.70rem;
+	font-size: 0.7rem;
 }
 
 .CalendarText {
@@ -177,14 +183,7 @@ big,
 	margin:1rem;
 }
 
-
 /****** booking page *********/
-
-.TitleBooking {
-	text-align:center;
-	font-size:1.7rem;
-	margin:0;
-}
 
 .BookingContainer {
 	display:grid;
