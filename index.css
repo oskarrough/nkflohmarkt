@@ -5,6 +5,7 @@
 html {
 	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; 
 	font-size: 20px;
+	font-size: calc(10px + 1.5vw);
 	font-weight: 600;
 	line-height: 1.3;
 }
@@ -57,7 +58,7 @@ a {
 
 .Contact {
 	/* email address */
-	font-size: 16px;
+	font-size: 0.75rem;
 	font-weight: normal;
 	text-decoration: none;
 }
@@ -107,32 +108,24 @@ a {
 /******* texts ******/
 
 .Title {
-	font-size:1.7rem;
+	font-size:1.5rem;
 	margin:0;
 	text-align:center;
 }
 
 big,
 .Subtitle {
-	font-size: 1.3rem;
-	letter-spacing: 0.05em;
+	font-size: 1.5rem;
 }
 
 .DescriptionText {
 	max-width: 95%;
 	max-height: 95%;
 	margin: 0 auto;
-	font-size: 0.7rem;
 }
 
 .CalendarText {
 	margin: 0 0.5em;
-}
-
-.DescriptionText,
-.CalendarText,
-.VideoText {
-	transition: font-size 0.3s ease-in-out;
 }
 
 @media (min-width:574px) {
@@ -142,18 +135,8 @@ big,
 }
 
 @media (min-width:768px) {
-	html {
-		font-size: 26px;
-	}
-
 	.Logo {
 		max-width: 55%;
-	}
-}
-
-@media (min-width: 1280px) {
-	html {
-		font-size: 30px;
 	}
 }
 
@@ -165,10 +148,10 @@ big,
 
 .BackArrow a {
 	display: inline-block;
-	padding-top: 0.2rem;
+	padding-top: 0.5rem;
 	padding-left:0.5rem;
 	text-decoration: none;
-	font-size: 0.7rem;
+	font-size: 0.75rem;
 }
 
 .InfoWrapper {
@@ -188,7 +171,6 @@ big,
 }
 
 .Box-text {
-	font-size: 0.9rem;
 	padding: 0 0.6rem;
 }
 
@@ -200,6 +182,7 @@ big,
 }
 
 .Box--longText p {
-	font-size: 0.7rem;
+	font-size: 1rem;
 	font-weight: 400;
 }
+
