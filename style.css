@@ -186,3 +186,8 @@ big,
 	font-weight: 400;
 }
 
+@media (min-width: 50rem) {
+	.Box--longText p {
+		font-size: 0.6rem;
+	}
+}
