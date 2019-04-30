@@ -7,7 +7,17 @@ html {
   font-size: 20px;
   font-size: calc(10px + 1.5vw);
   font-weight: 600;
-  line-height: 1.3;
+  line-height: 1.4;
+}
+
+@media (min-width: 50rem) {
+	.Box--longText {
+		font-size: 20px;
+	}
+}
+
+h1 {
+	font-size: 1.5rem;
 }
 
 body {
@@ -106,11 +116,11 @@ a {
 /******* texts ******/
 
 .Title {
-  font-size: 1.5rem;
   margin: 0;
   text-align: center;
 }
 
+.Title,
 big,
 .Subtitle {
   font-size: 1.5rem;
@@ -162,20 +172,23 @@ big,
 
 .Box--longText {
   text-align: initial;
-  max-width: 30em;
+  max-width: 40em;
   margin-left: auto;
   margin-right: auto;
+	padding: 1rem;
 }
 
 .Box--longText p {
-  font-size: 1rem;
   font-weight: 400;
 }
 
-@media (min-width: 50rem) {
-  .Box--longText p {
-    font-size: 0.7rem;
-  }
+.Box--longText h2 {
+	font-size: 1rem;
+	margin: 1rem 0 0.5rem;
+}
+
+.Box--longText p {
+	margin: 0;
 }
 
 .Box form {
