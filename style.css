@@ -3,7 +3,7 @@
 }
 
 html {
-	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; 
+	font-family: sans-serif;
 	font-size: 20px;
 	font-size: calc(10px + 1.5vw);
 	font-weight: 600;
@@ -29,7 +29,7 @@ a {
 	grid-template-rows: 2rem repeat(3, calc(100vh / 5)) minmax(20vh, auto);
 	grid-gap: 2.5%;
 	/* different padding-x to compensate for box-shadow */
-	padding: 0 1.8vw 2rem 1.5vw;
+	padding: 0 1.8vw 3rem 1.5vw;
 }
 
 /********* contact social media logos ******/
@@ -94,8 +94,7 @@ a {
 /******** Logo ***********/
 
 .Logo {
-	max-width: 90%;
-	margin-bottom: 0.6em;
+	width: 6rem;
 	color: transparent;
 }
 
@@ -127,18 +126,6 @@ big,
 
 .CalendarText {
 	margin: 0 0.5em;
-}
-
-@media (min-width:574px) {
-	.Logo {
-		max-width: 70%;
-	}
-}
-
-@media (min-width:768px) {
-	.Logo {
-		max-width: 40%;
-	}
 }
 
 /***** Info page *****/
