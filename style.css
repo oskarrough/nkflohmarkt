@@ -1,189 +1,191 @@
 :root {
-	--primary: #f7dd36;
+  --primary: #f7dd36;
 }
 
 html {
-	font-family: sans-serif;
-	font-size: 20px;
-	font-size: calc(10px + 1.5vw);
-	font-weight: 600;
-	line-height: 1.3;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-size: calc(10px + 1.5vw);
+  font-weight: 600;
+  line-height: 1.3;
 }
 
 body {
-	margin:0;
+  margin: 0;
 }
 
 /* all black links */
 a {
-	color:black;
+  color: black;
 }
 
 /******** grid ***********/
 
 .Grid {
-	min-height: 95vh;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	/* grid-template-rows: 2rem repeat(5, calc(100vh / 5)); */
-	grid-template-rows: 2rem repeat(3, calc(100vh / 5)) minmax(20vh, auto);
-	grid-gap: 2.5%;
-	/* different padding-x to compensate for box-shadow */
-	padding: 0 1.8vw 3rem 1.5vw;
+  min-height: 95vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-template-rows: 2rem repeat(5, calc(100vh / 5)); */
+  grid-template-rows: 2rem repeat(3, calc(100vh / 5)) minmax(20vh, auto);
+  grid-gap: 2.5%;
+  /* different padding-x to compensate for box-shadow */
+  padding: 0 1.8vw 3rem 1.5vw;
 }
 
 /********* contact social media logos ******/
 
 .SocialWrapper {
-	display:flex;
-	justify-content:flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .SocialWrapper > a {
-	/* social links */
-	margin-right: 0.5rem;
-	margin-top: 0.5rem;
+  /* social links */
+  margin-right: 0.5rem;
+  margin-top: 0.5rem;
 }
 
 .SocialWrapper > span {
-	
-	margin-top:0.8rem;
-	margin-right: 0.5rem;
+  margin-top: 0.8rem;
+  margin-right: 0.5rem;
 }
 
 .SocialWrapper > a > img {
-	/* social logos */
-	width: 1rem;
-	height: 1rem;
+  /* social logos */
+  width: 1rem;
+  height: 1rem;
 }
 
 .Contact {
-	/* email address */
-	font-size: 0.75rem;
-	font-weight: normal;
-	text-decoration: none;
+  /* email address */
+  font-size: 0.75rem;
+  font-weight: normal;
+  text-decoration: none;
 }
-
 
 /******** grid's boxes ***********/
 
 .Grid > *,
 .Box {
-	border: 0.15rem solid black;
-	box-shadow: 0.3em 0.3rem 0px var(--primary);
-	border-radius: 0.1rem;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	text-align:center;
+  border: 0.15rem solid black;
+  box-shadow: 0.3em 0.3rem 0px var(--primary);
+  border-radius: 0.1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
 .Grid-bigBox {
-	grid-column: 1/4;
+  grid-column: 1/4;
 }
 
 .Grid-mediumBox {
-	grid-column: 2/4;
+  grid-column: 2/4;
 }
 
 .Grid-noBorderBox {
-	box-shadow: none;
-	border: 0;
+  box-shadow: none;
+  border: 0;
 }
 
 /******** Logo ***********/
 
 .Logo {
-	width: 6rem;
-	color: transparent;
+  width: 6rem;
+  color: transparent;
 }
 
 .Map {
-	display: block;
-	max-width: 100%;
-	max-height: 100%;
-	margin: 0 auto;
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 auto;
 }
 
 /******* texts ******/
 
 .Title {
-	font-size:1.5rem;
-	margin:0;
-	text-align:center;
+  font-size: 1.5rem;
+  margin: 0;
+  text-align: center;
 }
 
 big,
 .Subtitle {
-	font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .DescriptionText {
-	max-width: 95%;
-	max-height: 95%;
-	margin: 0 auto;
+  max-width: 95%;
+  max-height: 95%;
+  margin: 0 auto;
 }
 
 .CalendarText {
-	margin: 0 0.5em;
+  margin: 0 0.5em;
 }
 
 /***** Info page *****/
 
 .BackArrow {
-	float:left;
+  float: left;
 }
 
 .BackArrow a {
-	display: inline-block;
-	padding-top: 0.5rem;
-	padding-left:0.5rem;
-	text-decoration: none;
-	font-size: 0.75rem;
+  display: inline-block;
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+  text-decoration: none;
+  font-size: 0.75rem;
 }
 
 .InfoWrapper {
-	margin-top: 5vh;
+  margin-top: 5vh;
 }
 
 /****** booking page *********/
 
 .BookingContainer {
-	display:grid;
-	grid-template-columns: 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .Box {
-	text-align: center;
-	margin:0.5rem;
+  text-align: center;
+  margin: 0.5rem;
 }
 
 .Box-text {
-	padding: 0 0.6rem;
+  padding: 0 0.6rem;
 }
 
 .Box--longText {
-	text-align: initial;
-	max-width: 30em;
-	margin-left: auto;
-	margin-right: auto;
+  text-align: initial;
+  max-width: 30em;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .Box--longText p {
-	font-size: 1rem;
-	font-weight: 400;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 @media (min-width: 50rem) {
-	.Box--longText p {
-		font-size: 0.7rem;
-	}
+  .Box--longText p {
+    font-size: 0.7rem;
+  }
+}
+
+.Box form {
+  margin-bottom: 1rem;
 }
 
 small {
-	display: block;
-	font-size: 0.6rem;
-	font-weight: normal;
-	max-width: 80%;
-	margin: 0.5rem auto 0;
+  display: block;
+  font-size: 0.6rem;
+  font-weight: normal;
+  max-width: 80%;
+  margin: 0.5rem auto 0;
 }
