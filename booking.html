@@ -68,12 +68,13 @@
       <div class="Box FlexCont">
         <p class="Box-text FlexItem">31.03 Gewerbestand AUSVERKAUFT 40€</p>
 
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-          <input type="hidden" name="cmd" value="_s-xclick" />
-          <input type="hidden" name="hosted_button_id" value="7MZDTB665PDCU" />
-          <input type="image" src="https://www.paypalobjects.com/en_US/DE/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" />
-          <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-        </form>
+       <script src="https://www.paypal.com/sdk/js?client-id=BAAmnvw8-CewXUcP9l8KjAH__wbzhBcFmeEhrtI5knhIPmkTV4EHTHyNB9ggryanL27i0Z57TWeySiAPRs&components=hosted-buttons&disable-funding=venmo&currency=EUR"></script>
+<div id="paypal-container-7R2AVPYWL8P54"></div>
+<script>
+  paypal.HostedButtons({
+    hostedButtonId: "7R2AVPYWL8P54",
+  }).render("#paypal-container-7R2AVPYWL8P54")
+</script>
       </div>
     </div>
 
