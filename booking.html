@@ -50,31 +50,42 @@
       </div>
     </div>
 
-    <!-- private stand -->
+    <!-- script for paypal buttons -->
+    <script src="https://www.paypal.com/sdk/js?client-id=BAAmnvw8-CewXUcP9l8KjAH__wbzhBcFmeEhrtI5knhIPmkTV4EHTHyNB9ggryanL27i0Z57TWeySiAPRs&components=hosted-buttons&disable-funding=venmo,sepa,giropay&currency=EUR"></script>
+
     <div class="BookingContainer">
       <div class="Box FlexCont">
-        <p class="Box-text FlexItem">31.03 Privatstand 40€</p>
+        <!-- <p class="Box-text FlexItem">31.03</p> -->
 
-        <script src="https://www.paypal.com/sdk/js?client-id=BAAmnvw8-CewXUcP9l8KjAH__wbzhBcFmeEhrtI5knhIPmkTV4EHTHyNB9ggryanL27i0Z57TWeySiAPRs&components=hosted-buttons&disable-funding=venmo&currency=EUR"></script>
-<div id="paypal-container-EZLV2TZ9P8QPL"></div>
-<script>
-  paypal.HostedButtons({
-    hostedButtonId: "EZLV2TZ9P8QPL",
-  }).render("#paypal-container-EZLV2TZ9P8QPL")
-</script>
+        <!--
+          anything here will not be seen
+        -->
+
+        <!-- private stand button -->
+        <div class="paypalbox" id="paypal-container-EZLV2TZ9P8QPL"></div>
+        <script>
+          paypal.HostedButtons({
+            hostedButtonId: "EZLV2TZ9P8QPL",
+            style: {
+              tagline: false
+            }
+          }).render("#paypal-container-EZLV2TZ9P8QPL")
+        </script>
       </div>
 
-      <!-- business stand -->
       <div class="Box FlexCont">
-        <p class="Box-text FlexItem">31.03 Gewerbestand AUSVERKAUFT 40€</p>
+        <!-- <p class="Box-text FlexItem">31.03 AUSVERKAUFT</p> -->
 
-       <script src="https://www.paypal.com/sdk/js?client-id=BAAmnvw8-CewXUcP9l8KjAH__wbzhBcFmeEhrtI5knhIPmkTV4EHTHyNB9ggryanL27i0Z57TWeySiAPRs&components=hosted-buttons&disable-funding=venmo&currency=EUR"></script>
-<div id="paypal-container-7R2AVPYWL8P54"></div>
-<script>
-  paypal.HostedButtons({
-    hostedButtonId: "7R2AVPYWL8P54",
-  }).render("#paypal-container-7R2AVPYWL8P54")
-</script>
+        <!-- business stand button -->
+        <div class="paypalbox" id="paypal-container-7R2AVPYWL8P54"></div>
+        <script>
+          paypal.HostedButtons({
+            hostedButtonId: "7R2AVPYWL8P54",
+            style: {
+              tagline: false
+            }
+          }).render("#paypal-container-7R2AVPYWL8P54")
+        </script>
       </div>
     </div>
 

@@ -207,3 +207,13 @@ small {
   max-width: 80%;
   margin: 0.5rem auto 0;
 }
+
+.paypalbox {
+  margin: 1rem;
+}
+.paypalbox > div:first-child {
+  margin: auto;
+}
+.paypalbox #desc-label {
+  font-size: 1.5rem !important;
+}
