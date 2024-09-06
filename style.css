@@ -6,6 +6,7 @@ html {
   font-family: sans-serif;
   font-size: 20px;
   font-size: calc(10px + 1.5vw);
+  font-size: clamp(1.5rem, 5vw, 22px);
   font-weight: 600;
   line-height: 1.4;
 }
@@ -41,7 +42,7 @@ img {
 /******** grid ***********/
 
 .Grid {
-  min-height: 95vh;
+  min-height: calc(100vh - 3rem);
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   /* grid-template-rows: 2rem repeat(5, calc(100vh / 5)); */
@@ -83,6 +84,11 @@ a:not(:has(img)):hover {
 .Grid-noBorderBox {
   box-shadow: none;
   border: 0;
+}
+
+a.Grid-mediumBox {
+  /* padding: 0 1rem; */
+  text-wrap: balance;
 }
 
 /******** Logo ***********/
@@ -170,7 +176,7 @@ big,
 
 .InfoWrapper {
   /* margin-top: 5vh; */
-  margin: 2vh 1vw 0;
+  margin: 2vh 1vw;
 }
 
 /****** booking page *********/
@@ -208,12 +214,16 @@ big,
 
 .Box--longText p {
   font-weight: 400;
-  margin: 1rem 0 0rem;
+  margin: 0rem 0 1rem;
+}
+
+.Box--longText h2:first-child {
+  margin-top: 0.5rem;
 }
 
 .Box--longText h2 {
-	font-size: 1rem;
-	margin: 1rem 0 0.5rem;
+  font-size: 1rem;
+  margin: 0rem 0 1rem;
 }
 
 .Box form {
