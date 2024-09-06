@@ -4,21 +4,15 @@
 
 html {
   font-family: sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   font-size: calc(10px + 1.5vw);
-  font-size: clamp(1.5rem, 5vw, 22px);
+  font-size: clamp(16px, 4vw, 22px);
   font-weight: 600;
   line-height: 1.4;
 }
 
-@media (min-width: 50rem) {
-	.Box--longText {
-		font-size: 20px;
-	}
-}
-
 h1 {
-	font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 body {
@@ -26,7 +20,7 @@ body {
 }
 
 ul {
-	font-weight: normal;
+  font-weight: normal;
 }
 
 /* all black links */
@@ -87,7 +81,6 @@ a:not(:has(img)):hover {
 }
 
 a.Grid-mediumBox {
-  /* padding: 0 1rem; */
   text-wrap: balance;
 }
 
@@ -115,13 +108,20 @@ a.Grid-mediumBox {
 .Title,
 big,
 .Subtitle {
-  font-size: 1.5rem;
+  font-size: 1rem;
+
+  @media (min-width: 700px) {
+    & {
+      font-size: 1.5rem;
+    }
+  }
 }
 
 .DescriptionText {
   max-width: 95%;
   max-height: 95%;
   margin: 0 auto;
+  font-size: 0.75rem;
 }
 
 .CalendarText {
@@ -226,9 +226,6 @@ big,
   margin: 0rem 0 1rem;
 }
 
-.Box form {
-}
-
 .Box input[type="image"]:last-child {
   display: block;
   max-width: 100%;
@@ -236,7 +233,7 @@ big,
 
 small {
   display: block;
-  font-size: 0.6rem;
+  font-size: 0.75rem;
   font-weight: normal;
   max-width: 80%;
   margin: 0.5rem auto 0;
@@ -253,18 +250,18 @@ small {
 }
 
 p[center] {
-	text-align: center;
+  text-align: center;
 }
 
 .Manchet {
-	font-size: larger;
+  font-size: larger;
 }
 .Box--longText p.Manchet {
-	margin-top: 0.5rem;
-	text-align: center;
+  margin-top: 0.5rem;
+  text-align: center;
 }
 .Box--longText li {
-	margin-bottom: 0.5rem;
-	font-size: 0.75rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.75rem;
 }
 
