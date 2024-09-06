@@ -164,6 +164,15 @@ big,
 .BookingContainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  /* gap: 1rem; */
+  
+  > .Box {
+    width: 28%;
+  }
 }
 
 .Box {
