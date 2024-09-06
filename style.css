@@ -227,7 +227,11 @@ big,
 }
 
 .Box form {
-  margin-bottom: 1rem;
+}
+
+.Box input[type="image"]:last-child {
+  display: block;
+  max-width: 100%;
 }
 
 small {
@@ -263,3 +267,4 @@ p[center] {
 	margin-bottom: 0.5rem;
 	font-size: 0.75rem;
 }
+
