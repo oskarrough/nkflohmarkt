@@ -269,5 +269,6 @@ p[center] {
 .Box > form {
   display: flex;
   place-content: center;
-  margin-bottom: 1rem;
+  align-items: center;
+  flex-flow: column;
 }
