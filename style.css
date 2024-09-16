@@ -265,3 +265,9 @@ p[center] {
   font-size: 0.75rem;
 }
 
+
+.Box > form {
+  display: flex;
+  place-content: center;
+  margin-bottom: 1rem;
+}
