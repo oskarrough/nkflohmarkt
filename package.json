@@ -1,0 +1,1 @@
+{ "scripts": {"dev": "bunx servor --reload"}, "dependencies": { "json-2-csv": "^5.5.5" } }
