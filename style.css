@@ -272,3 +272,11 @@ p[center] {
   align-items: center;
   flex-flow: column;
 }
+
+hr {
+  height: 1px;
+  display: block;
+  border: 0;
+  background: black;
+  margin: 1rem 0 2rem;
+}
