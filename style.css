@@ -295,6 +295,10 @@ tbody {
 	tr:nth-child(even) {
 		background-color: #f7f7f7;
 	}
+
+	td:last-child {
+	  /* color: red; */
+	}
 }
 
 th {
@@ -302,9 +306,11 @@ th {
 }
 
 .BookingPage {
+  padding: 0 1rem 1rem;
   @media (min-width: 600px) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
+    padding: 0 0 1rem;
   }
 }
