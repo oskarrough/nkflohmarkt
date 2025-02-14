@@ -6,7 +6,7 @@ html {
   font-family: sans-serif;
   font-size: 16px;
   font-size: calc(10px + 1.5vw);
-  font-size: clamp(16px, 4vw, 22px);
+  font-size: clamp(16px, 4vw, 20px);
   font-weight: 600;
   line-height: 1.4;
 }
@@ -191,7 +191,7 @@ big,
   /* gap: 1rem; */
 
   > .Box {
-    width: 28%;
+    /* width: 35%; */
   }
 }
 
@@ -279,4 +279,31 @@ hr {
   border: 0;
   background: black;
   margin: 1rem 0 2rem;
+}
+
+table {
+	font-size: 14px;
+	cell-spacing: 0;
+	width: 100%;
+}
+tbody {
+	font-weight: normal;
+	td:first-child {
+		padding-right: 2rem;
+	}
+	tr:nth-child(even) {
+		background-color: #f7f7f7;
+	}
+}
+
+th {
+	text-align: left;
+}
+
+.BookingPage {
+  @media (min-width: 600px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
 }
