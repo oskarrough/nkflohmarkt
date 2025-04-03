@@ -5,23 +5,19 @@
 &rarr; https://www.nkflohmarkt.de/
 
 ---
-Development preview at https://nkflohmarkt.netlify.com/
 
-1. https://github.com/ (or https://github.com/oskarrough/nkflohmarkt)
-2. Repositories - oskarrough/nkflohmarkt
-3. Files and folders for website
-4. Booking - update text for stands
-5. index.html = homepage
-6. info = market rules
+HOW TO EDIT
 
-EDITING
+index.html = homepage  
+info.html = market rules
 
-1. Choose page to edit
+1. Click page to edit
 2. Click edit button
-3. locate text and make changes
+3. Make changes to the HTML
 4. Commit changes
 
-Changing link fo  oqrtyipr performancex.
-1. locate page you wanklnt linked.
-2. copy and pate page URL inside quotations
-3. Edit text of the performance (bio)
+MISC
+
+- CI deploy via Netlify
+- DNS is hosted with 123reg
+- Type used for posters: Hiragino Kaku Gothic ProN
